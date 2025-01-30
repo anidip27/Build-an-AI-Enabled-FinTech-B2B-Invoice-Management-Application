@@ -1,0 +1,10 @@
+show databases;
+
+ show tables from university;
+
+use university;
+
+select * from engineeringstudents;
+
+ select *from engineeringstudents where passoutyear = 2018;
+

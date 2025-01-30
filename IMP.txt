@@ -1,0 +1,60 @@
+INSERT INTO engineeringstudents VALUES (10201, 'CSE', 'Kiran', 'Acharya', 2018, 1272);
+INSERT INTO engineeringstudents VALUES (10211, 'CSE', 'Kiran', 'Bannerjee', 2018, 1332);
+INSERT INTO engineeringstudents VALUES (10212, 'ISE', 'Soumya', 'Kumari', 2019, 721);
+INSERT INTO engineeringstudents VALUES (10213, 'ISE', 'Jason', 'Robert', 2020, 2275);
+INSERT INTO engineeringstudents VALUES (10214, 'CSE', 'Praveen', 'Kumar', 2021, 1249);
+INSERT INTO engineeringstudents VALUES (10215, 'CSE', 'Rajath', 'Kumar', 2018, 2218);
+INSERT INTO engineeringstudents VALUES (10204, 'ECE', 'John', 'Denver', 2021, 539);
+INSERT INTO engineeringstudents VALUES (10205, 'EE', 'Raju', 'Kumar', 2018, 098);
+INSERT INTO engineeringstudents VALUES (10206, 'CSE', 'Jennifer', 'Charles', 2018, 1372);
+INSERT INTO engineeringstudents VALUES (10207, 'CSE', 'Chaitanya', 'Pujar', 2019, 1773);
+INSERT INTO engineeringstudents VALUES (10208, 'ME', 'Tom', 'Steven', 2020, 1223);
+INSERT INTO engineeringstudents VALUES (10209, 'ECE', 'John', 'Conner', 2021, 1539);
+
+
+root@localhost:3306
+
+jdbc:mysql://localhost:3306/?user=root
+
+
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MYJDBC {
+	public static void main(String[]args) throws SQLException {
+		String url = "jdbc:mysql://localhost:3306/university";
+		String uname = "root";
+		String password = "Anidip272001.";
+		String query = "select * from engineeringstudents";
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Connection con = DriverManager.getConnection(url, uname, password);
+			Statement statement = con.createStatement();
+			ResultSet result = statement.executeQuery(query);
+			
+			while(result.next()) {
+				String universitydata = " ";
+				for(int i = 1; i<=6; i++) {
+					universitydata += result.getString(i) + ":";
+			}
+             System.out.println(universitydata);
+			
+		}
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	}
+
+
