@@ -153,7 +153,7 @@ left, the Highradius Logo in the middle
 b. The second section consists of Predict, Advance Search, Analytics View
 Add, Delete & Edit, and Search bar.
 
-#####Add button:
+##### Add button:
 ● It is used for adding new field values to the gri
 ● The Add button will be in the enabled state if no row is selected.
 ● Whenever one or more rows are selected, the Add button will still remain activated.
@@ -163,6 +163,99 @@ which values need to be added along with a Cancel and an Add button.
 which there should be a calendar view from where the user is able to select the required
 date, month, and year.
 ● The user should fill in all the required fields before adding. If the user tries to click on
-add before all mandatory fields are filled, the user will not be able to add
+add before all mandatory fields are filled, the user will not be able to add.
+
+![Capture](https://github.com/user-attachments/assets/1c492c80-9799-46ca-8135-9e662a8ed920)
+
+Full-Screen View
+
+![snip4](https://github.com/user-attachments/assets/db9b0049-24b7-4c7a-ae51-2861980107b3)
+
+##### Edit button:
+● It is used for editing the editable field values in the gri
+● Edit button should be disabled at first and should enable only one checkbox 
+selected
+● A user should be able to select a row and then click on the Edit button.
+● The fields which can be edited are the Invoice Currency and Custom
+Payment Terms field
+Without selecting any row, the Edit button should remain disabled.
+● On clicking the Edit button, a popup should open up with the column header
+name and existing value. The user should be able to edit the existing value.
+● The popup should have a Edit, Cancel as shown in the UI below.
+
+![snip5](https://github.com/user-attachments/assets/743b4c58-e620-49d0-96bb-81d579cde968)
+
+
+Full Screen View 
+
+![snip6](https://github.com/user-attachments/assets/157910e2-a079-41a3-a130-94c02448dbb7)
+
+##### Delete Button :
+● Clicking on the delete button will allow the user to delete records from the grid.
+● When the user selects one or more rows, the delete button gets enabled.
+● A pop-up should be displayed on clicking delete to confirm that the user wants to delete
+the selected records permanently.
+● Once the user clicks on the delete button, the row(s) should be removed from the grid in
+the UI and should remain persistent.
+
+
+![snip7](https://github.com/user-attachments/assets/cf4f0a6e-cde6-4ace-a684-c2ce613f8711)
+
+Full Screen View
+
+![snip8](https://github.com/user-attachments/assets/7a3efb9b-0f67-4bc7-b57c-53fb513d121b)
+
+##### Predict button:
+
+● Users should be able to predict the payment date of selected Invoices with the
+help of the Predict button.
+● Clicking on this button will populate the Predicted Payment Date column on the
+UI with the predicted dates.
+● When the user selects one or more Invoices and clicks on the Predict button, the
+Predicted Payment Date column should get populated only for those invoices.
+● The button should get activated only upon selecting any of the Invoice(s).
+● If no Invoice is selected, the button should be in a disabled state.
+
+
+![snip9](https://github.com/user-attachments/assets/83f02b38-2f17-488f-a6d4-5a8a1403458c)
+
+##### Advanced Search button:
+
+The UI consists of the Advanced Search button.
+Clicking on this button will help the user to perform an advanced search on the data
+based on the following four field
+1. Document Id-(doc_id)
+2. Customer No-(cust_number)
+3. Invoice No-(invoice_id)
+4. Business Year- (buisness_year)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
