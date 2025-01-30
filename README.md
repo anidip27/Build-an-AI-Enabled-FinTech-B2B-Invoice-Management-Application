@@ -229,6 +229,422 @@ based on the following four field
 3. Invoice No-(invoice_id)
 4. Business Year- (buisness_year)
 
+![snip11](https://github.com/user-attachments/assets/65138d73-223c-44e1-9b73-2d8cccd5adbf)
+
+Full Screen View
+
+![snip12](https://github.com/user-attachments/assets/9e04f97f-4de6-4744-bfee-096c3df88f89)
+
+##### Analytics View: (Optional Task)
+
+To get insights from the existing data based on users inputs. The existing parameters
+would act as key points or outliers for the synthesis of data.
+So the analytics view will be a button in UI which responds to a new window on click
+event
+
+![snip13](https://github.com/user-attachments/assets/0e37427c-22bf-4e53-b06a-fb26e2775ba0)
+
+The new window contains of parameters:
+Currency (Multiselect)
+Due Date
+Baseline Create Date
+Clear Date
+The user will have a privilege to go for single parameter or multi parameter based on
+their choices and preferences.
+On submitting the parameters the web application will open the dialog window which
+will provide the user with an illustration of a bar graph and pie chart which will be
+formed based on the parameterized data that the user had selected.
+The bar graph will be showing data for the total open amount and number of customers
+for all Business
+
+
+![snip14](https://github.com/user-attachments/assets/cd9a00e8-cd3f-4bfd-929f-5e35f5ba2601)
+
+Pie Chart for Currencies :The Pie chart will be containing the selected currencies.
+
+
+![snip15](https://github.com/user-attachments/assets/256f7692-212c-4b1d-ab8f-92bc72821f3d)
+
+
+##### Searchable fields behavior:
+
+a.Business Year- Text Field
+b.Customer Id-Text Field
+c.Invoice No - Text Field
+d.Document Id - Text Field
+e.Customer Id - Equal Search
+Users should be able to search for a customer by typing text in the Customer id integer
+field. Search is not case-sensitive.
+
+![snip16](https://github.com/user-attachments/assets/8434c71e-a224-4442-a830-da846ecf17d3)
+
+
+##### Grid Panel Section
+
+The Seventh Section is the Grid Header section, consisting of all the different column
+name headers and a Select All and Deselect All functionality.
+Following are the columns to be displayed in the UI:
+1. sl_no
+2. business_code
+3. cust_number
+4. clear_date
+5. buisness_year
+6. doc_id
+7. posting_date
+8. document_create_date
+9. due_in_date
+10.invoice_currency
+11.document type
+12.posting_id
+13.total_open_amount
+14.baseline_create_date
+15.cust_payment_terms
+16.invoice_id
+
+![snip17](https://github.com/user-attachments/assets/d3dc3236-6214-4466-86f3-cc8a1ea54dba)
+
+##### The Grid panel section will be divided into 3 portions:
+
+● The header of the grid will have a Predict button on the top left corner followed
+by an Advance Search Button,an Analytics view, an Add Button, an Edit Button,
+a Delete Button, and a Search Bar.
+● The name of the grid that is Invoice List will be mentioned in the top left corner of
+the grid.
+● The second portion is the table with customer invoice data as rows and the
+following columns:
+
+The list of all the columns to be represented on the UI are as follows:
+1. sl_no
+2. business_code
+3. cust_number
+4. clear_date
+5. buisness_year
+6. doc_id
+7. posting_date
+8. document_create_date
+9. due_in_date
+10. invoice_currency
+11. document type
+12. posting_id
+13. total_open_amount
+14. baseline_create_date
+15. cust_payment_terms
+16. invoice_id
+
+
+The Grid consists of the Grid Rows that contains the required data that is loaded from
+the CSV File. On a single page, only 10 invoices’ data is displayed. Users can select
+single or multiple rows
+
+![snip18](https://github.com/user-attachments/assets/5080b6a8-9f97-4fca-bc32-d86ad53a2a1b)
+
+##### Sorting & Searching
+
+1. Sorting:
+Sorting should be performed on all the columns:
+2. Clicking on the column headers should sort the values of the whole grid
+a. First click - Ascending
+b. Second click - Descending
+Column headers should have a double arrow symbol near the column name to
+indicate they can be sorted.
+
+##### Horizontal Scroll Bar
+
+The Horizontal Scroll Bar which can be used to scroll across the screen to access the data in various columns.
+
+##### Footer
+
+The Grid consists of the Footer which will have the following three parts:
+● 'Viewing <starting count> - < end count> of <total count>' text on left. It shows
+invoices currently active.
+Example1: Viewing 1-10 of 500 means that the user is seeing 1-10 Invoices
+present on the page out of the total number of invoices which is 500.
+● Pagination arrows with text ' <present page number> of <total page number> ' in
+center. Clicking on the back arrow takes the user to the previous page. Clicking on the
+next arrow takes the user to the next page. Back arrow should be disabled when the
+user is on the first page and the next arrow should remain disabled if the user is on
+the last page.
+Example2: 2 of 50 means that the user is currently on 2ndd page and seeing
+invoices 11-20 out of the total 500 invoices.
+● 'Copyright 2022 Highradius.All Rights Reserved.' in the middle.
+
+##### AI support for the prediction of payment date
+
+1. As part of this project, you need to predict the Payment Date of each invoice.
+2. In order to achieve this, there should be a button named “Predict” present on
+the UI besides the “Advance Search” button.
+3. Users can select one or more invoices and click on the “Predict” button to
+predict the payment dates of those selected invoices.
+4. Once the button is clicked, the Predicted Payment Date column should get
+populated with the predicted dates derived from the ML model.
+5. The “Predict” button should remain disabled if no invoices are selected.
+
+##### Glossary
+
+1. Invoice - A document that is issued by a seller to a buyer when some goods are
+purchased. The fields which can be part of the invoice are defined b
+2. Advanced Search - A pop-up window, which depicts the illustration that
+enables the user to search with single or multiple parameter values from the
+grid.
+3. Predict - The predict button is used as a tool to predict the Payment Date of
+each invoice.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
